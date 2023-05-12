@@ -1,0 +1,17 @@
+{
+  "name": "replace-variables-in-file",
+  "version": "1.1.0",
+  "description": "This task allows you to replaces the pipeline variables in a file with their corresponding values (not secrets) during a build or release process.",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "npm run build:task && tfx extension create --manifest-globs vss-extension.json",
+    "build:task": "cd src && npm run build",
+    "publish": "tfx extension publish --manifest-globs your-manifest.json"
+  },
+  "keywords": [],
+  "author": "Andrés Lavado",
+  "license": "gpl-3.0",
+  "devDependencies": {
+    "tfx-cli": "0.9.2"
+  }
+}

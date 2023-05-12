@@ -1,0 +1,47 @@
+{
+    "manifestVersion": 1,
+    "id": "replace-variables-in-file",
+    "publisher": "docmalvado",
+    "version": "1.1.0",
+    "name": "Replace variables in file",
+    "description": "This task allows you to replaces the pipeline variables in a file with their corresponding values (not secrets) during a build or release process.",
+    "public": true,
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "custom-build-release-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "src"
+            }
+        }
+    ],
+    "files": [
+        {
+            "path": "src"
+        }
+    ],
+    "content": {
+        "details": {
+            "path": "README.md"
+        }
+    },
+    "icons": {
+        "default": "images/icon.png"
+    },
+    "screenshots": [
+        {
+            "path": "images/options.png"
+        }
+    ]
+}
